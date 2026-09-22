@@ -1,0 +1,58 @@
+{
+	"animation_name": "slow_effortful_walking_in_place_facing_right_side_view_elderly_woman_leaning_on_her_walking_stick_taking_careful_small_steps",
+	"animation_style": "",
+	"animation_type": "slow effortful walking in place facing right, side view, elderly woman leaning on her walking stick taking careful small steps",
+	"columns": 6,
+	"directions": [],
+	"frame_count": 6,
+	"frame_height": 48,
+	"frame_paths": [],
+	"frame_regions": [
+		{
+			"h": 48,
+			"w": 48,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"h": 48,
+			"w": 48,
+			"x": 48,
+			"y": 0
+		},
+		{
+			"h": 48,
+			"w": 48,
+			"x": 96,
+			"y": 0
+		},
+		{
+			"h": 48,
+			"w": 48,
+			"x": 144,
+			"y": 0
+		},
+		{
+			"h": 48,
+			"w": 48,
+			"x": 192,
+			"y": 0
+		},
+		{
+			"h": 48,
+			"w": 48,
+			"x": 240,
+			"y": 0
+		}
+	],
+	"frame_width": 48,
+	"name": "pilgrim_dolma_walk",
+	"prompt": "slow effortful walking in place facing right, side view, elderly woman leaning on her walking stick taking careful small steps",
+	"rows": 1,
+	"source_image": "res://assets/generated/pilgrim_dolma.png",
+	"source_tool": "animate_sprite",
+	"spritesheet_height": 48,
+	"spritesheet_path": "res://assets/generated/pilgrim_dolma_walk.png",
+	"spritesheet_width": 288,
+	"type": "animation"
+}
