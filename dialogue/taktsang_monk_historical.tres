@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://crmvq3cd7631w"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://kg4fs0l3emtl" path="res://assets/generated/taktsang_monk_2.png" id="2_monk"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_h1"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "In the eighth century, Guru Padmasambhava flew here on a tigress and meditated in the cave above us."
+portrait = ExtResource("2_monk")
+
+[sub_resource type="Resource" id="Resource_h2"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "The monastery was not built to conquer the cliff. It holds onto the rock the way a child holds a parent - without forcing, without breaking."
+portrait = ExtResource("2_monk")
+
+[sub_resource type="Resource" id="Resource_h3"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "The playful one will decorate it with a tiger before lunch. Still: remember the date, the cave, and the hands that carried the stones."
+portrait = ExtResource("2_monk")
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_monk_historical"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_h1"), SubResource("Resource_h2"), SubResource("Resource_h3")])

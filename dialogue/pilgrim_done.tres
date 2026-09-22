@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://pilgrimdone"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "Dolma"
+text = "Every year the climb argues a little louder, and every year the answer is the same. Sit with the view a while, child - it pays better than any argument."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"pilgrim_done"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1")])

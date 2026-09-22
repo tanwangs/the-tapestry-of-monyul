@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://mrfth2s5sbc3"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_p1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The wheel has been still for a long season. You touch the rim and find it cool with memory."
+
+[sub_resource type="Resource" id="Resource_p2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You spin it with both hands. The prayer inside begins to turn, and the cliff hears it."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_prayer_wheel_2"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_p1"), SubResource("Resource_p2")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://didnrwwo1osat"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You climb to the flat rock at the centre of the shore and sit facing the lake, breathing in time with the water."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "Up here the lake is not scenery. It is a neighbour - enormous, patient, and holding still enough that you can feel it deciding what the wind will do."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_view_center"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2")])

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://c8qh5coxjibwa"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://kg4fs0l3emtl" path="res://assets/generated/taktsang_monk_2.png" id="2_monk"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_w1"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "The offering stone holds three lamps and a bell. You have brought the flame and the sound. Now place them where they belong."
+portrait = ExtResource("2_monk")
+
+[sub_resource type="Resource" id="Resource_w2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The stone is still bare. I have not yet brought the flame and the sound together."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_altar_wait"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_w1"), SubResource("Resource_w2")])

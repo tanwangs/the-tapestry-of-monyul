@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://bfpvnc48dtde6"]
+
+[ext_resource type="Script" uid="uid://duk4bfklh2krs" path="res://scenes/ui/travel_menu.gd" id="1_menu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_frame"]
+content_margin_left = 30.0
+content_margin_top = 22.0
+content_margin_right = 30.0
+content_margin_bottom = 22.0
+bg_color = Color(0.07, 0.05, 0.06, 0.97)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.85, 0.68, 0.27, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_detail"]
+content_margin_left = 14.0
+content_margin_top = 12.0
+content_margin_right = 14.0
+content_margin_bottom = 12.0
+bg_color = Color(0.11, 0.08, 0.07, 0.85)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85, 0.68, 0.27, 0.28)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="TravelMenu" type="CanvasLayer" unique_id=1981172619]
+layer = 15
+script = ExtResource("1_menu")
+
+[node name="Root" type="Control" parent="." unique_id=677009313]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Scrim" type="ColorRect" parent="Root" unique_id=1972037448]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.03, 0.02, 0.02, 0.62)
+
+[node name="Center" type="CenterContainer" parent="Root" unique_id=223633632]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Frame" type="PanelContainer" parent="Root/Center" unique_id=1517161525]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_frame")
+
+[node name="Layout" type="VBoxContainer" parent="Root/Center/Frame" unique_id=1033659839]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Root/Center/Frame/Layout" unique_id=356722468]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.78, 0.32, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 22
+text = "Where would you like to go?"
+horizontal_alignment = 1
+
+[node name="Row" type="HBoxContainer" parent="Root/Center/Frame/Layout" unique_id=468376600]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="Detail" type="PanelContainer" parent="Root/Center/Frame/Layout" unique_id=1568827225]
+custom_minimum_size = Vector2(460, 104)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_detail")
+
+[node name="DetailRow" type="HBoxContainer" parent="Root/Center/Frame/Layout/Detail" unique_id=378553389]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Preview" type="TextureRect" parent="Root/Center/Frame/Layout/Detail/DetailRow" unique_id=1812721136]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Blurb" type="RichTextLabel" parent="Root/Center/Frame/Layout/Detail/DetailRow" unique_id=1284006300]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.9, 0.87, 0.8, 1)
+theme_override_font_sizes/normal_font_size = 15
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Hint" type="Label" parent="Root/Center/Frame/Layout" unique_id=106412519]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.79, 0.73, 1)
+theme_override_font_sizes/font_size = 15
+text = "Click a place to go      Esc to stay"
+horizontal_alignment = 1

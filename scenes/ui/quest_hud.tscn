@@ -1,0 +1,24 @@
+[gd_scene format=4 uid="uid://vbcluh7h7s2n"]
+
+[ext_resource type="Script" path="res://scripts/narrative/village_quests.gd" id="1_quests"]
+
+[node name="QuestHud" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_quests")
+
+[node name="Objective" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 26.0
+offset_right = 400.0
+offset_bottom = 62.0
+grow_horizontal = 2
+modulate = Color(1, 1, 1, 0)
+theme_override_colors/font_color = Color(0.96, 0.93, 0.86, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+text = ""

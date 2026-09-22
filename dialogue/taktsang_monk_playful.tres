@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://0myxdywanaup"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://kg4fs0l3emtl" path="res://assets/generated/taktsang_monk_2.png" id="2_monk"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_p1"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "Oh, the Tiger's Nest! You want to know why it is called that? Well - the tigress landed here and shook the cliff like a kitten."
+portrait = ExtResource("2_monk")
+
+[sub_resource type="Resource" id="Resource_p2"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "Some say Guru Rinpoche rode in on a tiger's back. Others say the tiger was just very impressed by the view. Either way, the name stuck, and so did the monastery."
+portrait = ExtResource("2_monk")
+
+[sub_resource type="Resource" id="Resource_p3"]
+script = ExtResource("1_line")
+speaker = "Monk"
+text = "Ask our careful historian and he will give you a date. Ask me and I will give you the tiger. Together, we are almost useful."
+portrait = ExtResource("2_monk")
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_monk_playful"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_p1"), SubResource("Resource_p2"), SubResource("Resource_p3")])

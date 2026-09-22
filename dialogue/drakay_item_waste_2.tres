@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://w6qt0ohgay1s"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_i1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "A cracked clay shard, dulled by the water's edge. Something was broken and left behind, and the water took it."
+
+[sub_resource type="Resource" id="Resource_i2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You set it carefully aside, out of the reach of the current."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_item_waste_2"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_i1"), SubResource("Resource_i2")])

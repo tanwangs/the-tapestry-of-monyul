@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://t5vkj1lo6wpr"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+[ext_resource type="Texture2D" uid="uid://cuvly7uwcdf33" path="res://assets/generated/tshomen_2.png" id="2_tshomen"]
+
+[sub_resource type="Resource" id="Resource_r1"]
+script = ExtResource("1_line")
+speaker = "Tshomen"
+text = "Back again? What did the water show you this time?"
+portrait = ExtResource("2_tshomen")
+
+[sub_resource type="Resource" id="Resource_r2"]
+script = ExtResource("1_line")
+speaker = "Tshomen"
+text = "I am Tshomen. I keep these waters, and these waters keep me. Who taught us to hold each other that way? No one. We simply do."
+portrait = ExtResource("2_tshomen")
+
+[sub_resource type="Resource" id="Resource_r3"]
+script = ExtResource("1_line")
+speaker = "Tshomen"
+text = "What did you carry in? Carry it back out with you. What you leave clean, you leave alive."
+portrait = ExtResource("2_tshomen")
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_pangtsho_repeat"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_r1"), SubResource("Resource_r2"), SubResource("Resource_r3")])

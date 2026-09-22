@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://pilgrimintro"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "Partway up the trail an old woman sits on a flat stone beside the path, walking stick across her knees. She is breathing the careful breaths of someone resting on purpose. As you step near she raises a hand - not for help, just in greeting."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "Dolma"
+text = "Don't fuss over me, child. I've done this climb every year. This year it argues back."
+
+[sub_resource type="Resource" id="Resource_v3"]
+script = ExtResource("1_line")
+speaker = "Dolma"
+text = "The monastery is close enough to see and far enough that my knees have opinions. Walk with me the last stretch of trail - at my pace, not yours. Go rushing off ahead and I lose my breath; stay near and I keep my rhythm all the way to the gate."
+
+[sub_resource type="Resource" id="Resource_v4"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "She plants the stick and stands, slower than the seasons. \"Company makes short work of long trails,\" she says. \"And you have the look of someone who can walk slowly when it matters.\""
+
+[resource]
+script = ExtResource("3_seq")
+id = &"pilgrim_intro"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2"), SubResource("Resource_v3"), SubResource("Resource_v4")])

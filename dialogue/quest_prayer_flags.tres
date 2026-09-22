@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://dubca0jt66tlx"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_jmkt8"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_7xxh8"]
+
+[sub_resource type="Resource" id="Resource_mgu2k"]
+script = ExtResource("1_jmkt8")
+speaker = "You"
+text = "Five colours on a string, snapping in the wind - blue for sky, white for cloud, red for fire, green for water, yellow for earth."
+
+[sub_resource type="Resource" id="Resource_ijbpt"]
+script = ExtResource("1_jmkt8")
+speaker = "You"
+text = "The flags move, but the sound of them arrives a moment late. You look at your hands instead."
+
+[resource]
+script = ExtResource("2_7xxh8")
+id = &"quest_prayer_flags"
+lines = Array[ExtResource("1_jmkt8")]([SubResource("Resource_mgu2k"), SubResource("Resource_ijbpt")])

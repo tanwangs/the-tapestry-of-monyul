@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://4m2bx3i3wo3n"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://kg4fs0l3emtl" path="res://assets/generated/taktsang_monk_2.png" id="2_monk"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_f1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "I will speak of how the monastery was founded, how the stones were carried up by hand."
+
+[sub_resource type="Resource" id="Resource_f2"]
+script = ExtResource("1_line")
+speaker = "Head Monk"
+text = "Then begin there. Speak it first, and let the others follow in their own time."
+portrait = ExtResource("2_monk")
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_retell_founding"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_f1"), SubResource("Resource_f2")])

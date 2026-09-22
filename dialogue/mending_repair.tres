@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://sfqqho0o3m8h"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You kneel at the platform's edge with the reeds laid out in lengths. Choden crouches beside you and takes the first bundle."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "Choden"
+text = "We start with the corner that folded. Lash the new poles to the old frame - there. Slow. Let the reed find the shape of the knot."
+
+[sub_resource type="Resource" id="Resource_v3"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You work the cord through, pole to pole, while she holds the frame steady. It wants patience more than strength."
+
+[sub_resource type="Resource" id="Resource_v4"]
+script = ExtResource("1_line")
+speaker = "Choden"
+text = "Good. Now the net. Lay it across your knee and follow the rip to its end - never mend from the middle. The middle doesn't know where it tore."
+
+[sub_resource type="Resource" id="Resource_v5"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "Following the tear one mesh at a time, you knot the new cord where the old twine gave. Beside you, Choden is re-tying the far end without looking at it."
+
+[sub_resource type="Resource" id="Resource_v6"]
+script = ExtResource("1_line")
+speaker = "Choden"
+text = "Even, now. Pull it tight all at once and the mesh forgets how to open for the fish. Let it keep its give."
+
+[sub_resource type="Resource" id="Resource_v7"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The last knots go in. The platform settles square on its corner, and the net hangs even - a little patched, good for years yet."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"mending_repair"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2"), SubResource("Resource_v3"), SubResource("Resource_v4"), SubResource("Resource_v5"), SubResource("Resource_v6"), SubResource("Resource_v7")])

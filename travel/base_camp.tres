@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TravelDestination" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/generated/icon_base_camp.png" id="1_svf68"]
+[ext_resource type="Script" path="res://scripts/travel/travel_destination.gd" id="2_708sf"]
+
+[resource]
+script = ExtResource("2_708sf")
+label = "Base Camp"
+icon = ExtResource("1_svf68")
+blurb = "Back to the retreat. Kinley will be there, and the kettle is usually still warm."
+scene_path = "res://scenes/lobby.tscn"
+arrival_pos = Vector2(240, 168)
+taxi_stop_path = NodePath("LobbyTaxiStop")

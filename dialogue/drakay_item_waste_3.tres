@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://ddsu6fjid2c0y"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_i1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "A smear of dark silt, still damp, caked between the stones where the path meets the lake."
+
+[sub_resource type="Resource" id="Resource_i2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You wipe it away with your hand. The stone underneath is cool and clean."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_item_waste_3"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_i1"), SubResource("Resource_i2")])

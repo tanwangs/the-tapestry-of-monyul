@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://c0ei7l487qoe6"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_s67b4"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_8v7wp"]
+
+[sub_resource type="Resource" id="Resource_xpklu"]
+script = ExtResource("1_s67b4")
+speaker = "You"
+text = "Something is half a step out of time here. The light is a shade too grey, and the quiet has weight to it."
+
+[sub_resource type="Resource" id="Resource_0cul5"]
+script = ExtResource("1_s67b4")
+speaker = "You"
+text = "The village is holding its breath. Best to start walking."
+
+[resource]
+script = ExtResource("2_8v7wp")
+id = &"village_unease"
+lines = Array[ExtResource("1_s67b4")]([SubResource("Resource_xpklu"), SubResource("Resource_0cul5")])

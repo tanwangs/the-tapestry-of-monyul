@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://sfqqho0orqqq"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The west stand. You take only the stalks that have already gone to seed, leaving the green ones rooted - the old rule, kept by hands that learned it from other hands."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "A bundle of long pale reeds. The lake's share stays where it is."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"mending_reed_1"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2")])

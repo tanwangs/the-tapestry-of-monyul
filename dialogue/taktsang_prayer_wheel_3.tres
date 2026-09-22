@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://brvxq0jl8sx46"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_p1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The last wheel stands at the end of the trail. You hold it and feel the weight of every mantra that has gone before."
+
+[sub_resource type="Resource" id="Resource_p2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You set it turning, and the whole trail hums with the sound of it moving."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_prayer_wheel_3"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_p1"), SubResource("Resource_p2")])

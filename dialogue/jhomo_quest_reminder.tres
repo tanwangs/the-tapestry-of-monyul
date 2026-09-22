@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://0k243lj5enic"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://cs01qj53vomdi" path="res://assets/generated/aum_jomo_2.png" id="2_jomo"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_r1"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "Tsheringma Ney is east along the ledge, where the trail bends. Incense, a lamp and a bowl - carry all three, and set them out gently."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_r2"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "The mountain is patient. It is also a long way above us. Do not make it wait forever."
+portrait = ExtResource("2_jomo")
+
+[resource]
+script = ExtResource("3_seq")
+id = &"jhomo_quest_reminder"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_r1"), SubResource("Resource_r2")])

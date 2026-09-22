@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TravelDestination" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/generated/icon_drakay_pangtsho.png" id="1_pmshp"]
+[ext_resource type="Script" path="res://scripts/travel/travel_destination.gd" id="2_nsm88"]
+
+[resource]
+script = ExtResource("2_nsm88")
+label = "Drakay Pangtsho"
+icon = ExtResource("1_pmshp")
+blurb = "The lake of the demon. Water so still it carries the whole sky without keeping any of it. Tshomen watches from the shallows."
+realm = &"drakay_pangtsho"
+scene_path = "res://scenes/nyes/drakay_pangtsho.tscn"
+arrival_pos = Vector2(120, 528)
+taxi_stop_path = NodePath("TaxiStop")

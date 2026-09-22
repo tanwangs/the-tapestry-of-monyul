@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://bjnohi4at8of0"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" uid="uid://cs01qj53vomdi" path="res://assets/generated/aum_jomo_2.png" id="2_jomo"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_a1"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "Why are you rushing on a mountain?"
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a2"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "They call her Jomolhari - the Mountain of the Goddess. Seven thousand three hundred and twenty-six metres of ice and stone, and the water of half this valley begins on her shoulder."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a3"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "But the balance is thinning. The snow comes late, the springs come early, and the young ones have stopped listening to the mountain."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a4"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "You can help it steady. Walk east along the ledge to Tsheringma Ney - the small shrine where the trail bends - and make an offering there. Properly, with your hands and not your hurry."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a5"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "Three things travel with you: incense, to carry the wish upward; a butter lamp, to hold a light steady; and a bowl, to receive. You will find all three along the path."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a6"]
+script = ExtResource("1_line")
+speaker = "Aum Jomo"
+text = "And this also, {player}: the mountain speaks to those who listen. Three places on this ledge hold her voice - a rock to the west, the ridge above the temple, and the stones to the south. Sit at every one."
+portrait = ExtResource("2_jomo")
+
+[sub_resource type="Resource" id="Resource_a7"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "Then I will walk, and I will listen."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"jhomo_quest_intro"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_a1"), SubResource("Resource_a2"), SubResource("Resource_a3"), SubResource("Resource_a4"), SubResource("Resource_a5"), SubResource("Resource_a6"), SubResource("Resource_a7")])

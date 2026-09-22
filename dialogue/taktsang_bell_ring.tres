@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://chcf6xkrn0lk5"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_b1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You lift the mallet and strike the bronze bell. The sound travels down the cliff face and into the valley below."
+
+[sub_resource type="Resource" id="Resource_b2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The tone lingers against the rock and then fades, but the echo stays - the mountain remembers what has been sounded."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_bell_ring"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_b1"), SubResource("Resource_b2")])

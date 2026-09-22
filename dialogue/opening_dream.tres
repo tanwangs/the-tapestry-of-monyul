@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://dquxg8kg6mjb"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_dclg1"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_6os50"]
+
+[sub_resource type="Resource" id="Resource_4dm5v"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "You are standing... somewhere that remembers you."
+
+[sub_resource type="Resource" id="Resource_oufnr"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "This tree has been burning quietly. Since before your grandmother's grandmother."
+
+[sub_resource type="Resource" id="Resource_qtr2m"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "You have slept at the edge of its light, {player}... your whole life. Most people do."
+
+[sub_resource type="Resource" id="Resource_bq21w"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "Three places left... that still know the whole story."
+
+[sub_resource type="Resource" id="Resource_forget_1"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "You are part of the whole... but you have forgotten."
+
+[sub_resource type="Resource" id="Resource_forget_2"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "Not just you. Everyone. A little at a time."
+
+[sub_resource type="Resource" id="Resource_7sbsn"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "Walk to them. Look properly. What holds them together... holds you."
+
+[sub_resource type="Resource" id="Resource_v6xdg"]
+script = ExtResource("1_dclg1")
+speaker = "The Voice"
+text = "Now wake up... the village is not quite itself."
+
+[resource]
+script = ExtResource("2_6os50")
+id = &"opening_dream"
+lines = Array[ExtResource("1_dclg1")]([SubResource("Resource_4dm5v"), SubResource("Resource_oufnr"), SubResource("Resource_qtr2m"), SubResource("Resource_bq21w"), SubResource("Resource_forget_1"), SubResource("Resource_forget_2"), SubResource("Resource_7sbsn"), SubResource("Resource_v6xdg")])

@@ -1,0 +1,17 @@
+[gd_scene format=4]
+
+[ext_resource type="Texture2D" path="res://assets/tilesets/plains.png" id="1_sheet"]
+[ext_resource type="Script" path="res://scenes/_grid.gd" id="2_grid"]
+
+[node name="PlainsViewer" type="Node2D"]
+
+[node name="sheet" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_sheet")
+centered = false
+
+[node name="grid" type="Node2D" parent="."]
+script = ExtResource("2_grid")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(192, 288)

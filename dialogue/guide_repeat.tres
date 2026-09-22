@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://28q3sj0xcmp6"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_engol"]
+[ext_resource type="Texture2D" uid="uid://dpkb4sl11om0t" path="res://assets/generated/guide.png" id="2_qa742"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_1byaj"]
+
+[sub_resource type="Resource" id="Resource_13jjh"]
+script = ExtResource("1_engol")
+speaker = "Kinley"
+text = "Back already, or off somewhere new?"
+portrait = ExtResource("2_qa742")
+
+[sub_resource type="Resource" id="Resource_dvt6c"]
+script = ExtResource("1_engol")
+speaker = "Kinley"
+text = "Name the place and I will call the taxi for you."
+portrait = ExtResource("2_qa742")
+
+[resource]
+script = ExtResource("3_1byaj")
+id = &"guide_repeat"
+lines = Array[ExtResource("1_engol")]([SubResource("Resource_13jjh"), SubResource("Resource_dvt6c")])

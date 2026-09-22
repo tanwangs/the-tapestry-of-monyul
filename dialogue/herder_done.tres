@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://c42f6uo1ehq1m"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "Dema"
+text = "He's up there already, acting like nothing happened. It's a good life, if you don't mind the weather."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "Dema"
+text = "Keep the cord on you. Wool from this mountain remembers the way home."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"herder_done"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2")])

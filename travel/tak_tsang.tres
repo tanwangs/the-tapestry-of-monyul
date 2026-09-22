@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TravelDestination" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/generated/icon_tak_tsang.png" id="1_8022j"]
+[ext_resource type="Script" path="res://scripts/travel/travel_destination.gd" id="2_apgkl"]
+
+[resource]
+script = ExtResource("2_apgkl")
+label = "Tak Tsang"
+icon = ExtResource("1_8022j")
+blurb = "The tiger's nest. A monastery holding onto its cliff nine hundred metres above the valley - the way a child holds a parent."
+realm = &"taktsang"
+scene_path = "res://scenes/nyes/tak_tsang.tscn"
+arrival_pos = Vector2(112, 560)
+taxi_stop_path = NodePath("TaxiRank")

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://vnm51hx2wvvu"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_o1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You clear the waste from the stone, the way you were taught - the vessel before the gift."
+
+[sub_resource type="Resource" id="Resource_o2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The lake stirs beneath your hands. Something has noticed that you came."
+
+[sub_resource type="Resource" id="Resource_o3"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You sit at the offering stone, not to ask for anything - just to be one more thing on this shore that is paying attention."
+
+[sub_resource type="Resource" id="Resource_o4"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "For a while the water goes quiet, and the cloud lifts from the surface like a held breath released."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_pangtsho_altar_offering"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_o1"), SubResource("Resource_o2"), SubResource("Resource_o3"), SubResource("Resource_o4")])

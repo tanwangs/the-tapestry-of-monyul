@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ctshomen"]
+
+[ext_resource type="Script" uid="uid://dwdr64bygn46c" path="res://scripts/npc.gd" id="1_npc"]
+[ext_resource type="SpriteFrames" uid="uid://bdncrjih75bm" path="res://assets/generated/tshomen_frames.tres" id="2_frames"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_talk"]
+radius = 34.0
+
+[node name="Tshomen" type="Area2D" unique_id=1448597803]
+collision_layer = 0
+collision_mask = 1
+y_sort_enabled = true
+script = ExtResource("1_npc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1285707233]
+position = Vector2(0, -18)
+sprite_frames = ExtResource("2_frames")
+animation = &"idle_front"
+autoplay = "idle_front"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1671273864]
+shape = SubResource("CircleShape2D_talk")
+
+[node name="Prompt" type="Label" parent="." unique_id=1667821874]
+offset_left = -12.0
+offset_top = -72.0
+offset_right = 12.0
+offset_bottom = -48.0
+theme_override_colors/font_color = Color(1, 0.87, 0.4, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "!"
+horizontal_alignment = 1
+vertical_alignment = 1

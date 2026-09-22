@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TravelDestination" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/generated/icon_jhomo_lhari.png" id="1_41xxd"]
+[ext_resource type="Script" path="res://scripts/travel/travel_destination.gd" id="2_pkn43"]
+
+[resource]
+script = ExtResource("2_pkn43")
+label = "Jhomo Lhari"
+icon = ExtResource("1_41xxd")
+blurb = "The mountain of the goddess. Ice, stone and a silence you can hear - and the stream that starts here and ends up in the valley's rice bowl."
+realm = &"jomolhari"
+scene_path = "res://scenes/nyes/jhomo_lhari.tscn"
+arrival_pos = Vector2(96, 536)
+taxi_stop_path = NodePath("TaxiRank")

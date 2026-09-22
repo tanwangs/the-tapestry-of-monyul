@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3]
+[ext_resource type="Script" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Texture2D" path="res://assets/generated/taktsang_monk_2.png" id="2_monk"]
+[ext_resource type="Script" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+
+[sub_resource type="Resource" id="Resource_o1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You lift the wick to the flame and steady your hand. The butter catches, and a small bright light stands where there was none."
+
+[sub_resource type="Resource" id="Resource_o2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The lamp flickers and then holds its flame. The monastery is one step closer to being ready."
+
+[resource]
+script = ExtResource("2_seq")
+id = &"taktsang_lamp_offered"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_o1"), SubResource("Resource_o2")])

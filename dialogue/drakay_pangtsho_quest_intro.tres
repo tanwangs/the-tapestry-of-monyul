@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://kgb65hu78bs2"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_seq"]
+[ext_resource type="Texture2D" uid="uid://cuvly7uwcdf33" path="res://assets/generated/tshomen_2.png" id="2_tshomen"]
+
+[sub_resource type="Resource" id="Resource_a1"]
+script = ExtResource("1_line")
+speaker = "Tshomen"
+text = "What do you see wrong here?"
+portrait = ExtResource("2_tshomen")
+
+[resource]
+script = ExtResource("2_seq")
+id = &"drakay_pangtsho_quest_intro"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_a1")])

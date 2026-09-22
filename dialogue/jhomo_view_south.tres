@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://bwrn1e3wud64q"]
+
+[ext_resource type="Script" uid="uid://b0cflgfqmd74d" path="res://scripts/dialogue/dialogue_line.gd" id="1_line"]
+[ext_resource type="Script" uid="uid://0650pa6ei7hh" path="res://scripts/dialogue/dialogue_sequence.gd" id="3_seq"]
+
+[sub_resource type="Resource" id="Resource_v1"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "You sit on the worn stones at the southern end of the ledge, where the water starts down towards the valley."
+
+[sub_resource type="Resource" id="Resource_v2"]
+script = ExtResource("1_line")
+speaker = "You"
+text = "The stream is loud here. You follow it down with your ears until it is too far away to hear, and for a moment you can picture the rice fields it is walking towards."
+
+[resource]
+script = ExtResource("3_seq")
+id = &"jhomo_view_south"
+lines = Array[ExtResource("1_line")]([SubResource("Resource_v1"), SubResource("Resource_v2")])
